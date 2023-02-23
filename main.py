@@ -6,7 +6,7 @@ app = FastAPI()
 
 
 @app.get('/headquarter-weather')
-async def get_headquarter_weather(include_maximum: Optional[bool] = False):
+def get_headquarter_weather(include_maximum: Optional[bool] = False):
     params = {
         "latitude": 51.43,
         "longitude": 6.97,
